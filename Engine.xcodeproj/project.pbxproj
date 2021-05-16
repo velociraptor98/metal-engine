@@ -16,6 +16,9 @@
 		0C23D79226511C6E00959B1A /* EngineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C23D79126511C6E00959B1A /* EngineUITests.swift */; };
 		0C23D7A026511E9A00959B1A /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C23D79F26511E9A00959B1A /* GameView.swift */; };
 		0C23D7A226512B6D00959B1A /* shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 0C23D7A126512B6D00959B1A /* shaders.metal */; };
+		0C23D7AA2651978700959B1A /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C23D7A92651978700959B1A /* Engine.swift */; };
+		0C23D7AC265198B200959B1A /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C23D7AB265198B200959B1A /* Preferences.swift */; };
+		0C23D7AF26519B8200959B1A /* ShaderLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C23D7AE26519B8200959B1A /* ShaderLibrary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		0C23D79326511C6E00959B1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C23D79F26511E9A00959B1A /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		0C23D7A126512B6D00959B1A /* shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = shaders.metal; sourceTree = "<group>"; };
+		0C23D7A92651978700959B1A /* Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+		0C23D7AB265198B200959B1A /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		0C23D7AE26519B8200959B1A /* ShaderLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderLibrary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,15 +108,16 @@
 		0C23D76F26511C6D00959B1A /* Engine */ = {
 			isa = PBXGroup;
 			children = (
+				0C23D7AD26519B6D00959B1A /* Libraries */,
+				0C23D7A6265196E900959B1A /* Shaders */,
+				0C23D7A5265196E000959B1A /* Display */,
+				0C23D7A3265196C500959B1A /* Core */,
 				0C23D77026511C6D00959B1A /* AppDelegate.swift */,
 				0C23D77226511C6D00959B1A /* ViewController.swift */,
 				0C23D77726511C6E00959B1A /* Assets.xcassets */,
-				0C23D77926511C6E00959B1A /* Main.storyboard */,
 				0C23D77C26511C6E00959B1A /* Info.plist */,
 				0C23D77D26511C6E00959B1A /* Engine.entitlements */,
 				0C23D77426511C6D00959B1A /* Engine.xcdatamodeld */,
-				0C23D79F26511E9A00959B1A /* GameView.swift */,
-				0C23D7A126512B6D00959B1A /* shaders.metal */,
 			);
 			path = Engine;
 			sourceTree = "<group>";
@@ -131,6 +138,40 @@
 				0C23D79326511C6E00959B1A /* Info.plist */,
 			);
 			path = EngineUITests;
+			sourceTree = "<group>";
+		};
+		0C23D7A3265196C500959B1A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0C23D7A92651978700959B1A /* Engine.swift */,
+				0C23D7AB265198B200959B1A /* Preferences.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0C23D7A5265196E000959B1A /* Display */ = {
+			isa = PBXGroup;
+			children = (
+				0C23D77926511C6E00959B1A /* Main.storyboard */,
+				0C23D79F26511E9A00959B1A /* GameView.swift */,
+			);
+			path = Display;
+			sourceTree = "<group>";
+		};
+		0C23D7A6265196E900959B1A /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				0C23D7A126512B6D00959B1A /* shaders.metal */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		0C23D7AD26519B6D00959B1A /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				0C23D7AE26519B8200959B1A /* ShaderLibrary.swift */,
+			);
+			path = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +304,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C23D77326511C6D00959B1A /* ViewController.swift in Sources */,
+				0C23D7AC265198B200959B1A /* Preferences.swift in Sources */,
+				0C23D7AF26519B8200959B1A /* ShaderLibrary.swift in Sources */,
+				0C23D7AA2651978700959B1A /* Engine.swift in Sources */,
 				0C23D7A226512B6D00959B1A /* shaders.metal in Sources */,
 				0C23D77626511C6D00959B1A /* Engine.xcdatamodeld in Sources */,
 				0C23D7A026511E9A00959B1A /* GameView.swift in Sources */,
