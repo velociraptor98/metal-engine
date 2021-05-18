@@ -12,5 +12,9 @@ class Engine{
     public static func Set(device: MTLDevice){
         self.Device = device
         self.CommandQueue = device.makeCommandQueue()
+        ShaderLibrary.initialize()
+        VertexDescriptorLibrary.initialize()
+        RenderPipelineDescriptorLibrary.initialize()
+        RenderPipelineStateLibrary.initialize()
     }
 }
