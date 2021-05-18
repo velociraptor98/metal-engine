@@ -11,6 +11,8 @@
 		0C1BECF8265435C4007E227F /* RenderPipelineDescriptorLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1BECF7265435C4007E227F /* RenderPipelineDescriptorLibrary.swift */; };
 		0C1BECFA265438B6007E227F /* RenderPipelineStateLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1BECF9265438B6007E227F /* RenderPipelineStateLibrary.swift */; };
 		0C1BECFC26543C58007E227F /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1BECFB26543C58007E227F /* Types.swift */; };
+		0C1BECFF26543F1E007E227F /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1BECFE26543F1E007E227F /* GameObject.swift */; };
+		0C1BED012654415E007E227F /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1BED002654415E007E227F /* Renderer.swift */; };
 		0C23D77126511C6D00959B1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C23D77026511C6D00959B1A /* AppDelegate.swift */; };
 		0C23D77326511C6D00959B1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C23D77226511C6D00959B1A /* ViewController.swift */; };
 		0C23D77626511C6D00959B1A /* Engine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C23D77426511C6D00959B1A /* Engine.xcdatamodeld */; };
@@ -47,6 +49,8 @@
 		0C1BECF7265435C4007E227F /* RenderPipelineDescriptorLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderPipelineDescriptorLibrary.swift; sourceTree = "<group>"; };
 		0C1BECF9265438B6007E227F /* RenderPipelineStateLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderPipelineStateLibrary.swift; sourceTree = "<group>"; };
 		0C1BECFB26543C58007E227F /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		0C1BECFE26543F1E007E227F /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
+		0C1BED002654415E007E227F /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 		0C23D76D26511C6D00959B1A /* Engine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Engine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C23D77026511C6D00959B1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C23D77226511C6D00959B1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C1BECFD26543EEF007E227F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				0C1BECFE26543F1E007E227F /* GameObject.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		0C23D76426511C6D00959B1A = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +128,7 @@
 		0C23D76F26511C6D00959B1A /* Engine */ = {
 			isa = PBXGroup;
 			children = (
+				0C1BECFD26543EEF007E227F /* Entities */,
 				0C23D7AD26519B6D00959B1A /* Libraries */,
 				0C23D7A6265196E900959B1A /* Shaders */,
 				0C23D7A5265196E000959B1A /* Display */,
@@ -163,6 +176,7 @@
 			children = (
 				0C23D77926511C6E00959B1A /* Main.storyboard */,
 				0C23D79F26511E9A00959B1A /* GameView.swift */,
+				0C1BED002654415E007E227F /* Renderer.swift */,
 			);
 			path = Display;
 			sourceTree = "<group>";
@@ -317,8 +331,10 @@
 			files = (
 				0C1BECF8265435C4007E227F /* RenderPipelineDescriptorLibrary.swift in Sources */,
 				0C1BECF626543236007E227F /* VertexDescriptorLibrary.swift in Sources */,
+				0C1BED012654415E007E227F /* Renderer.swift in Sources */,
 				0C23D77326511C6D00959B1A /* ViewController.swift in Sources */,
 				0C1BECFC26543C58007E227F /* Types.swift in Sources */,
+				0C1BECFF26543F1E007E227F /* GameObject.swift in Sources */,
 				0C23D7AC265198B200959B1A /* Preferences.swift in Sources */,
 				0C23D7AF26519B8200959B1A /* ShaderLibrary.swift in Sources */,
 				0C23D7AA2651978700959B1A /* Engine.swift in Sources */,
